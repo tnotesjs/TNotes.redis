@@ -41,10 +41,14 @@
   - [2. 🔍 `SET` Command](https://tdahuyou.github.io/TNotes.redis/notes/0007.%20%E6%9F%A5%E9%98%85%20redis%20%E5%91%BD%E4%BB%A4/README#2--set-command)
   - [3. 🤔 官方文档中的 “ACL categories” 是什么？](https://tdahuyou.github.io/TNotes.redis/notes/0007.%20%E6%9F%A5%E9%98%85%20redis%20%E5%91%BD%E4%BB%A4/README#3--官方文档中的-acl-categories-是什么)
   - [4. 🔗 References](https://tdahuyou.github.io/TNotes.redis/notes/0007.%20%E6%9F%A5%E9%98%85%20redis%20%E5%91%BD%E4%BB%A4/README#4--references)
-- [ ] [0008. Redis 键(key)](https://tdahuyou.github.io/TNotes.redis/notes/0008.%20Redis%20%E9%94%AE(key)/README)
+- [x] [0008. Redis 键(key)](https://tdahuyou.github.io/TNotes.redis/notes/0008.%20Redis%20%E9%94%AE(key)/README)
   - [1. 📝 概述](https://tdahuyou.github.io/TNotes.redis/notes/0008.%20Redis%20%E9%94%AE(key)/README#1--概述)
-- [ ] [0009. Redis 字符串(String)](https://tdahuyou.github.io/TNotes.redis/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README)
+  - [2. 📒 常用的 redis 键命令](https://tdahuyou.github.io/TNotes.redis/notes/0008.%20Redis%20%E9%94%AE(key)/README#2--常用的-redis-键命令)
+  - [3. 💻 基础示例](https://tdahuyou.github.io/TNotes.redis/notes/0008.%20Redis%20%E9%94%AE(key)/README#3--基础示例)
+- [x] [0009. Redis 字符串(String)](https://tdahuyou.github.io/TNotes.redis/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README)
   - [1. 📝 概述](https://tdahuyou.github.io/TNotes.redis/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README#1--概述)
+  - [2. 📒 常用的 redis 字符串命令](https://tdahuyou.github.io/TNotes.redis/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README#2--常用的-redis-字符串命令)
+  - [3. 💻 基础示例](https://tdahuyou.github.io/TNotes.redis/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README#3--基础示例)
 - [ ] [0010. Redis 哈希(Hash)](https://tdahuyou.github.io/TNotes.redis/notes/0010.%20Redis%20%E5%93%88%E5%B8%8C(Hash)/README)
   - [1. 📝 概述](https://tdahuyou.github.io/TNotes.redis/notes/0010.%20Redis%20%E5%93%88%E5%B8%8C(Hash)/README#1--概述)
 - [ ] [0011. Redis 列表(List)](https://tdahuyou.github.io/TNotes.redis/notes/0011.%20Redis%20%E5%88%97%E8%A1%A8(List)/README)
@@ -69,3 +73,9 @@
   - [1. 📝 概述](https://tdahuyou.github.io/TNotes.redis/notes/0020.%20Redis%20GEO/README#1--概述)
 - [ ] [0021. Redis Stream](https://tdahuyou.github.io/TNotes.redis/notes/0021.%20Redis%20Stream/README)
   - [1. 📝 概述](https://tdahuyou.github.io/TNotes.redis/notes/0021.%20Redis%20Stream/README#1--概述)
+
+## 5. en-words
+
+- [x] [0022. en-words](https://tdahuyou.github.io/TNotes.redis/notes/0022.%20en-words/README)
+  - [1. 📝 概述](https://tdahuyou.github.io/TNotes.redis/notes/0022.%20en-words/README#1--概述)
+  - [2. 🎯 redis 单词本](https://tdahuyou.github.io/TNotes.redis/notes/0022.%20en-words/README#2--redis-单词本)

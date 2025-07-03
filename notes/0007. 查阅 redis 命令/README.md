@@ -66,6 +66,7 @@ ACL SETUSER john -@slow
 
 - https://redis.io/docs/latest/commands/
   - 查阅 redis 最新的命令
+  - ![图 0](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-03-22-19-02.png)
 - https://redis.io/docs/latest/commands/set/
   - set command
 - https://redis.io/docs/latest/commands/acl/
