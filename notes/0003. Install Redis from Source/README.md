@@ -11,10 +11,15 @@
 ## 1. 📝 概述
 
 - 记录从源代码安装 Redis 的步骤。
+- 本节记录的流程主要以 macOS 为例。
+  - 这种安装方式也同时适用于 Windows 系统。
+  - 注：需要启用 WSL（Windows Subsystem for Linux）
 
 ## 2. 💻 从源码安装 Redis（以 macos 为例）
 
-```bash
+::: code-group
+
+```bash [macos]
 # 安装 Xcode 命令行工具（如果还没有安装）
 xcode-select --install
 
@@ -34,6 +39,29 @@ make test # 可选：运行测试确认是否编译成功
 # 安装 Redis 到系统目录
 sudo make install
 ```
+
+```bash [windows]
+# 启用 WSL（Windows Subsystem for Linux）
+# 打开 PowerShell（以管理员身份运行）
+# 输入以下命令启用 WSL：
+wsl --install
+# 然后输入用户名密码创建 Linux 用户。
+
+# 更新软件包并安装编译工具
+sudo apt update && sudo apt upgrade -y
+sudo apt install build-essential tcl git -y
+
+# 后续步骤相同
+cd /tmp
+curl -O https://download.redis.io/redis-stable.tar.gz
+tar -xzvf redis-stable.tar.gz
+cd redis-stable
+make
+make test
+sudo make install
+```
+
+:::
 
 ## 3. 🔗 References
 

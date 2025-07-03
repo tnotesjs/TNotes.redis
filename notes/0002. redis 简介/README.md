@@ -63,8 +63,6 @@ Redis 与其他 key-value 存储系统的主要区别在于其提供了丰富的
   - github - Redis
 - https://redis.io/
   - redis 官网
-- https://redis.io/docs/latest/commands/
-  - 查阅 redis 最新的命令
 - https://github.com/antirez
   - github - Salvatore Sanfilippo
   - ![图 0](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-02-21-35-03.png)
