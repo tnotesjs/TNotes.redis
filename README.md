@@ -6,8 +6,10 @@
   - [1. redis 学习资源](#1-redis-学习资源)
   - [2. 认识 redis](#2-认识-redis)
   - [3. 安装 redis](#3-安装-redis)
-  - [4. redis 命令](#4-redis-命令)
-  - [5. en-words](#5-en-words)
+  - [4. 快速体验 redis](#4-快速体验-redis)
+  - [5. redis 规范](#5-redis-规范)
+  - [6. redis 命令](#6-redis-命令)
+  - [7. en-words](#7-en-words)
 
 <!-- endregion:toc -->
 
@@ -41,11 +43,36 @@
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0005.%20%E9%AA%8C%E8%AF%81%20Redis%20%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F/README.md#1--概述)
   - [2. 💻 验证 Redis 是否安装成功](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0005.%20%E9%AA%8C%E8%AF%81%20Redis%20%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F/README.md#2--验证-redis-是否安装成功)
 
-## 4. redis 命令
+## 4. 快速体验 redis
+
+- [x] [0024. try redis](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md)
+  - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md#1--概述)
+  - [2. 💻 创建并使用在线的 redis 数据库](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md#2--创建并使用在线的-redis-数据库)
+    - [2.1. 多种连接方式](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md#21-多种连接方式)
+      - [2.1.1. Redis Insight](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md#211-redis-insight)
+      - [2.1.2. Redis CLI](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md#212-redis-cli)
+      - [2.1.3. Redis Client](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md#213-redis-client)
+    - [2.2. 使用 CLI 来连接 redis 数据库](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md#22-使用-cli-来连接-redis-数据库)
+    - [2.3. 使用 VSCode redis 插件来连接 redis 数据库](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md#23-使用-vscode-redis-插件来连接-redis-数据库)
+  - [3. 🔍 可视化工具会自动识别“命名空间”](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis/README.md#3--可视化工具会自动识别命名空间)
+
+## 5. redis 规范
 
 - [x] [0006. Redis 命令大小写规范](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0006.%20Redis%20%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%B0%8F%E5%86%99%E8%A7%84%E8%8C%83/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0006.%20Redis%20%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%B0%8F%E5%86%99%E8%A7%84%E8%8C%83/README.md#1--概述)
   - [2. 💻 命令大小写不敏感](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0006.%20Redis%20%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%B0%8F%E5%86%99%E8%A7%84%E8%8C%83/README.md#2--命令大小写不敏感)
+- [ ] [0023. KEY 冒号分割命名法](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95/README.md)
+  - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95/README.md#1--概述)
+  - [2. 🤔 KEY 冒号分割命名法是什么？](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95/README.md#2--key-冒号分割命名法是什么)
+  - [3. 🤔 KEY 冒号分割命名法有什么用？](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95/README.md#3--key-冒号分割命名法有什么用)
+    - [3.1. 更好的 UI 交互](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95/README.md#31-更好的-ui-交互)
+    - [3.2. 避免键名冲突](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95/README.md#32-避免键名冲突)
+    - [3.3. 便于查找与维护](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95/README.md#33-便于查找与维护)
+    - [3.4. 支持命名空间模拟](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95/README.md#34-支持命名空间模拟)
+    - [3.5. 适用于集群和缓存场景](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95/README.md#35-适用于集群和缓存场景)
+
+## 6. redis 命令
+
 - [x] [0007. 查阅 redis 命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0007.%20%E6%9F%A5%E9%98%85%20redis%20%E5%91%BD%E4%BB%A4/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0007.%20%E6%9F%A5%E9%98%85%20redis%20%E5%91%BD%E4%BB%A4/README.md#1--概述)
   - [2. 🔍 `SET` Command](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0007.%20%E6%9F%A5%E9%98%85%20redis%20%E5%91%BD%E4%BB%A4/README.md#2--set-command)
@@ -54,21 +81,36 @@
 - [x] [0008. Redis 键(key)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0008.%20Redis%20%E9%94%AE(key)/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0008.%20Redis%20%E9%94%AE(key)/README.md#1--概述)
   - [2. 📒 常用的 redis 键命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0008.%20Redis%20%E9%94%AE(key)/README.md#2--常用的-redis-键命令)
-  - [3. 💻 基础示例](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0008.%20Redis%20%E9%94%AE(key)/README.md#3--基础示例)
+  - [3. 💻 key](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0008.%20Redis%20%E9%94%AE(key)/README.md#3--key)
 - [x] [0009. Redis 字符串(String)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README.md#1--概述)
   - [2. 📒 常用的 redis 字符串命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README.md#2--常用的-redis-字符串命令)
   - [3. 💻 基础示例](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README.md#3--基础示例)
-- [ ] [0010. Redis 哈希(Hash)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0010.%20Redis%20%E5%93%88%E5%B8%8C(Hash)/README.md)
+  - [4. 🔗 References](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)/README.md#4--references)
+- [x] [0010. Redis 哈希(Hash)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0010.%20Redis%20%E5%93%88%E5%B8%8C(Hash)/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0010.%20Redis%20%E5%93%88%E5%B8%8C(Hash)/README.md#1--概述)
+  - [2. 📒 Redis hash](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0010.%20Redis%20%E5%93%88%E5%B8%8C(Hash)/README.md#2--redis-hash)
+  - [3. 📒 常用的 redis hash 命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0010.%20Redis%20%E5%93%88%E5%B8%8C(Hash)/README.md#3--常用的-redis-hash-命令)
+  - [4. 💻 基础示例](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0010.%20Redis%20%E5%93%88%E5%B8%8C(Hash)/README.md#4--基础示例)
+  - [5. 💻 hash 编码方式](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0010.%20Redis%20%E5%93%88%E5%B8%8C(Hash)/README.md#5--hash-编码方式)
 - [ ] [0011. Redis 列表(List)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0011.%20Redis%20%E5%88%97%E8%A1%A8(List)/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0011.%20Redis%20%E5%88%97%E8%A1%A8(List)/README.md#1--概述)
+  - [2. 📒 常用的 redis list 命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0011.%20Redis%20%E5%88%97%E8%A1%A8(List)/README.md#2--常用的-redis-list-命令)
+  - [3. 💻 基础示例](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0011.%20Redis%20%E5%88%97%E8%A1%A8(List)/README.md#3--基础示例)
 - [ ] [0012. Redis 集合(Set)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0012.%20Redis%20%E9%9B%86%E5%90%88(Set)/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0012.%20Redis%20%E9%9B%86%E5%90%88(Set)/README.md#1--概述)
+  - [2. 📒 常用的 redis set 命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0012.%20Redis%20%E9%9B%86%E5%90%88(Set)/README.md#2--常用的-redis-set-命令)
+  - [3. 💻 基础示例](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0012.%20Redis%20%E9%9B%86%E5%90%88(Set)/README.md#3--基础示例)
 - [ ] [0013. Redis 有序集合(sorted set)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0013.%20Redis%20%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88(sorted%20set)/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0013.%20Redis%20%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88(sorted%20set)/README.md#1--概述)
+  - [2. 📒 常用的 redis zset 命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0013.%20Redis%20%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88(sorted%20set)/README.md#2--常用的-redis-zset-命令)
+  - [3. 💻 基础示例](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0013.%20Redis%20%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88(sorted%20set)/README.md#3--基础示例)
 - [ ] [0014. Redis HyperLogLog](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0014.%20Redis%20HyperLogLog/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0014.%20Redis%20HyperLogLog/README.md#1--概述)
+  - [2. 📒 HyperLogLog](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0014.%20Redis%20HyperLogLog/README.md#2--hyperloglog)
+  - [3. 🤔 什么是基数？](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0014.%20Redis%20HyperLogLog/README.md#3--什么是基数)
+  - [4. 📒 常用的 redis HyperLogLog 命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0014.%20Redis%20HyperLogLog/README.md#4--常用的-redis-hyperloglog-命令)
+  - [5. 💻 基础示例](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0014.%20Redis%20HyperLogLog/README.md#5--基础示例)
 - [ ] [0015. Redis 发布订阅](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0015.%20Redis%20%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0015.%20Redis%20%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85/README.md#1--概述)
 - [ ] [0016. Redis 事务](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0016.%20Redis%20%E4%BA%8B%E5%8A%A1/README.md)
@@ -84,7 +126,7 @@
 - [ ] [0021. Redis Stream](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#1--概述)
 
-## 5. en-words
+## 7. en-words
 
 - [x] [0022. en-words](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0022.%20en-words/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0022.%20en-words/README.md#1--概述)

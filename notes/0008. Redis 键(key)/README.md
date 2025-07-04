@@ -4,7 +4,7 @@
 
 - [1. 📝 概述](#1--概述)
 - [2. 📒 常用的 redis 键命令](#2--常用的-redis-键命令)
-- [3. 💻 基础示例](#3--基础示例)
+- [3. 💻 key](#3--key)
 
 <!-- endregion:toc -->
 
@@ -16,7 +16,7 @@
 
 ::: code-group
 
-```bash [键管理]
+```bash [基础操作]
 SET KEY_NAME VALUE
 # 设置键 KEY_NAME 的值为 VALUE
 
@@ -91,11 +91,20 @@ SCAN CURSOR [MATCH pattern] [COUNT count]
 
 :::
 
-## 3. 💻 基础示例
+## 3. 💻 key
 
 ```bash
-SET a 1 b 2 # 设置键 a 和 b 的值分别为 1 和 2
-# OK (表示成功设置键 a 和 b 的值分别为 1 和 2)
+SET a 1  # 设置键 a 为 1
+# OK (表示成功)
+
+SET b 2 # 设置键 b 为 2
+# OK (表示成功)
+
+TYPE a
+# string (表示键 a 的类型为字符串)
+
+TYPE b
+# string (表示键 b 的类型为字符串)
 
 GET a # 获取键 a 的值
 # "1" (获取键 a 的值)
@@ -103,9 +112,25 @@ GET a # 获取键 a 的值
 GET b # 获取键 b 的值
 # "2" (获取键 b 的值)
 
+DUMP b
+# "\x00\xc0\x02\x0c\x00D\xd4\x84|\x02\xfe\xe0\x82"
+# 获取 b 被序列化的值
+
 EXISTS a b # 检查键 a 和 b 是否存在
 # (integer) 2 (表示两个键都存在)
 
+RANDOMKEY
+# "a" 或 "b" 其中一个
+
 DEL a b # 删除键 a 和 b
 # (integer) 2 (成功删除了两个键)
+
+EXISTS a b
+# (integer) 0 (表示两个键都不存在)
+
+GET a
+# (nil)
+
+GET b
+# (nil)
 ```

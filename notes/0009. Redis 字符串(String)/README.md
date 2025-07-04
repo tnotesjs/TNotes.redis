@@ -5,6 +5,7 @@
 - [1. 📝 概述](#1--概述)
 - [2. 📒 常用的 redis 字符串命令](#2--常用的-redis-字符串命令)
 - [3. 💻 基础示例](#3--基础示例)
+- [4. 🔗 References](#4--references)
 
 <!-- endregion:toc -->
 
@@ -16,7 +17,7 @@
 
 ::: code-group
 
-```bash [基本操作]
+```bash [基础操作]
 SET key value
 # 设置指定 key 的值
 
@@ -114,12 +115,14 @@ GETSET greeting "hi" # 返回旧值 "hello world"
 GET greeting # 输出新值 "hi"
 
 # 条件设置
-SETNX new_key "first_set" # 成功设置
-SETNX new_key "second_set" # 不会覆盖，因为 new_key 已存在
+SETNX new_key "first_set" # 1 表示设置成功
+SETNX new_key "second_set" # 0 表示设置失败，不会覆盖，因为 new_key 已存在
 
 # 多个键设置与获取
 MSET name "Alice" age "30"
-MGET name age # 输出 ["Alice", "30"]
+MGET name age
+# 1) "alice"
+# 2) "30"
 
 # 自增操作
 SET counter 100
@@ -132,7 +135,22 @@ DECRBY counter 5 # 输出 105
 
 # 位操作
 SET bit_key "A" # ASCII 'A' = 65 = 0b01000001
-GETBIT bit_key 6 # 输出 1
-SETBIT bit_key 6 0 # 修改第六位为 0
-GET bit_key # 输出 ASCII '!' (0b01000000)
+GETBIT bit_key 0 # 输出 0
+GETBIT bit_key 1 # 输出 1
+GETBIT bit_key 2 # 输出 0
+GETBIT bit_key 3 # 输出 0
+GETBIT bit_key 4 # 输出 0
+GETBIT bit_key 5 # 输出 0
+GETBIT bit_key 6 # 输出 0
+GETBIT bit_key 7 # 输出 1
+
+SETBIT bit_key 2 1 # 修改第 3 位为 1 -> 0b01100001
+GET bit_key # ASCII 'a' (0b01100001)
+# a
 ```
+
+## 4. 🔗 References
+
+- https://www.runoob.com/w3cnote/ascii.html
+  - 菜鸟教程 ASCII 表
+  - ![图 0](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-09-33-09.png)

@@ -39,7 +39,7 @@
 
 - `ACL categories: @write, @string, @slow`
   - ACL 是 Access Control List（访问控制列表）的缩写
-  - `@write`、`@string` 和 `@slow` 是 命令分类（Command Categories） 的标签，用于将不同的 Redis 命令按其功能或行为进行归类。通过这些分类，可以更方便地为用户授予或限制某类命令的执行权限。
+  - `@write`、`@string` 和 `@slow` 是 **命令分类（Command Categories）** 的标签，用于将不同的 Redis 命令按其功能或行为进行归类。通过这些分类，可以更方便地为用户授予或限制某类命令的执行权限。
   - `@write`：表示该命令会对 Redis 中的数据进行写操作。
     - 示例命令：`SET`, `DEL`, `HSET` 等。
     - 授予此分类权限后，用户可以执行所有标记为写操作的命令。

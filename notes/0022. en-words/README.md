@@ -30,6 +30,7 @@
     'set',
     'list',
     'string',
-    'stream'
+    'stream',
+    'multiple',
   ]"
 />
