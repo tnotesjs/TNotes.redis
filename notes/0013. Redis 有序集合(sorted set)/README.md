@@ -3,19 +3,24 @@
 <!-- region:toc -->
 
 - [1. 📝 概述](#1--概述)
-- [2. 📒 常用的 redis zset 命令](#2--常用的-redis-zset-命令)
-- [3. 💻 基础示例](#3--基础示例)
+- [2. 📒 有序集合 sorted set](#2--有序集合-sorted-set)
+- [3. 📒 常用的 redis zset 命令](#3--常用的-redis-zset-命令)
+- [4. 💻 基础示例](#4--基础示例)
 
 <!-- endregion:toc -->
 
 ## 1. 📝 概述
 
-- Redis 有序集合和集合一样也是 string 类型元素的集合,且不允许重复的成员。
+- 了解 redis 中的有序集合 sorted set 的相关命令。
+
+## 2. 📒 有序集合 sorted set
+
+- Redis 有序集合和集合一样也是 string 类型元素的集合，且不允许重复的成员。
 - 不同的是每个元素都会关联一个 double 类型的分数。redis 正是通过分数来为集合中的成员进行从小到大的排序。
-- 有序集合的成员是唯一的,但分数(score)却可以重复。
+- 有序集合的成员是唯一的，但分数(score)却可以重复。
 - 集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O(1)。集合中最大的成员数为 $2^{32} - 1$（40 多亿个成员）。
 
-## 2. 📒 常用的 redis zset 命令
+## 3. 📒 常用的 redis zset 命令
 
 ::: code-group
 
@@ -47,7 +52,7 @@ ZSCORE key member
 # 返回有序集中指定成员的分数值
 ```
 
-```bash [范围删除]
+```bash [范围删除、查询]
 ZREM key member [member ...]
 # 移除有序集合中的一个或多个成员
 
@@ -56,9 +61,7 @@ ZREMRANGEBYRANK key start stop
 
 ZREMRANGEBYSCORE key min max
 # 移除有序集合中给定分数区间的所有成员
-```
 
-```bash [范围查询]
 ZRANGEBYSCORE key min max [WITHSCORES] [LIMIT offset count]
 # 返回有序集合中分数介于 min 和 max 之间的成员列表
 
@@ -90,7 +93,7 @@ ZSCAN key cursor [MATCH pattern] [COUNT count]
 
 :::
 
-## 3. 💻 基础示例
+## 4. 💻 基础示例
 
 ```bash
 # 添加成员到有序集合
@@ -98,7 +101,8 @@ ZADD myzset 1 "one"
 # (integer) 1
 
 ZADD myzset 2 "two" 3 "three" 1 "one"
-# (integer) 2 (one 已存在，仅更新分数)
+# (integer) 2 表示成功添加了 2 个成员
+# one 已存在，仅更新分数
 
 # 查看有序集合成员（按分数从小到大）
 ZRANGE myzset 0 -1 WITHSCORES
@@ -114,6 +118,9 @@ ZSCORE myzset "two"
 # "2"
 
 # 查看成员的排名（索引）
+ZRANK myzset "one"
+# (integer) 0
+
 ZRANK myzset "three"
 # (integer) 2
 
@@ -130,11 +137,20 @@ ZINCRBY myzset 2 "one"
 
 # 再次查看成员及分数
 ZRANGE myzset 0 -1 WITHSCORES
+# 可能是 three 排在前面。
 # 1) "two"
 # 2) "2"
 # 3) "three"
 # 4) "3"
 # 5) "one"
+# 6) "3"
+
+# 或者 one 排在前面。
+# 1) "two"
+# 2) "2"
+# 3) "one"
+# 4) "3"
+# 5) "three"
 # 6) "3"
 
 # 删除成员

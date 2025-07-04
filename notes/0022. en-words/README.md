@@ -32,5 +32,13 @@
     'string',
     'stream',
     'multiple',
+    'cardinality',
+    'member',
+    'integer',
+    'remove',
+    'rank',
+    'union',
+    'store',
+    'score',
   ]"
 />
