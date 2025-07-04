@@ -40,5 +40,10 @@
     'union',
     'store',
     'score',
+    'Philippine',
+    'subscribe',
+    'publish',
+    'channel',
+    'message',
   ]"
 />

@@ -7,6 +7,7 @@
 - [3. 🤔 什么是基数？](#3--什么是基数)
 - [4. 📒 常用的 redis HyperLogLog 命令](#4--常用的-redis-hyperloglog-命令)
 - [5. 💻 基础示例](#5--基础示例)
+- [6. 🤔 `PFADD`、`PFCOUNT`、`PFMERGE`…… 这些命令中的 `PF` 是什么？](#6--pfaddpfcountpfmerge-这些命令中的-pf-是什么)
 
 <!-- endregion:toc -->
 
@@ -75,3 +76,8 @@ PFMERGE hll3 hll hll2
 PFCOUNT hll3
 # (integer) 10 （估计有 10 个不同的元素）
 ```
+
+## 6. 🤔 `PFADD`、`PFCOUNT`、`PFMERGE`…… 这些命令中的 `PF` 是什么？
+
+- `PF` 指的是 Philippe Flajolet，他是提出 HyperLogLog 算法的计算机科学家之一。Redis 使用这一命名方式来纪念他的贡献。
+- Redis 的创始人 Salvatore Sanfilippo（又称 antirez）为了致敬这些研究者，在实现 HyperLogLog 相关命令时使用了他们的名字缩写。`PFADD`、`PFCOUNT` 和 `PFMERGE` 中的 `PF` 即来源于此。
