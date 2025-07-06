@@ -45,5 +45,8 @@
     'publish',
     'channel',
     'message',
+    'standalone',
+    'cluster',
+    'sentinel',
   ]"
 />

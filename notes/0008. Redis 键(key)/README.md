@@ -14,28 +14,41 @@
 
 ## 2. 📒 常用的 redis 键命令
 
+- 【1】基础操作
+- 【2】过期时间管理
+- 【3】其他
+
 ::: code-group
 
-```bash [基础操作]
-SET KEY_NAME VALUE
+```bash [1]
 # 设置键 KEY_NAME 的值为 VALUE
+SET KEY_NAME VALUE
 
-GET KEY_NAME
 # 获取键 KEY_NAME 的值
+GET KEY_NAME
 
-DEL KEY_NAME
 # 删除键 KEY_NAME
+DEL KEY_NAME
 # DEL 是 DELETE 的缩写，表示删除
 
-EXISTS KEY_NAME
 # 检查键 KEY_NAME 是否存在
+EXISTS KEY_NAME
 
-RENAME KEY NEWKEY
 # 将键 KEY 的值重命名为 NEWKEY。
+RENAME KEY NEWKEY
 
-RENAMENX KEY NEWKEY
 # 将键 KEY 的值重命名为 NEWKEY。（前提：如果 NEWKEY 不存在）
+RENAMENX KEY NEWKEY
 # RENAMENX 是 Rename if Not eXists 的缩写，仅在新键不存在时重命名
+
+# 删除当前数据库的所有 key
+FLUSHDB
+
+# 删除所有数据库的所有 key
+FLUSHALL
+
+# 获取当前数据库的 key 数量
+DBSIZE
 
 TYPE KEY
 # 返回键 KEY 的数据类型。
@@ -47,44 +60,44 @@ MOVE KEY DB
 # 将当前数据库的 KEY 移动到指定的数据库 DB 中
 ```
 
-```bash [过期时间管理]
-TTL KEY
+```bash [2]
 # 获取键 KEY 的剩余过期时间，单位为秒。
+TTL KEY
 # TTL 表示 Time To Live，即键 KEY 的剩余生存时间。
 
-PTTL KEY
 # 获取键 KEY 的剩余过期时间，单位为毫秒。
+PTTL KEY
 # PTTL 是 Precise Time To Live 的缩写，表示键的剩余生存时间（毫秒）
 
-EXPIRE KEY_NAME TIME
 # 设置键 KEY_NAME 的过期时间，TIME 为秒数。
+EXPIRE KEY_NAME TIME
 
-EXPIREAT KEY_NAME TIMESTAMP
 # 设置键 KEY_NAME 的过期时间，TIMESTAMP 为时间戳。
+EXPIREAT KEY_NAME TIMESTAMP
 
-PEXPIRE KEY_NAME MILLISECONDS
 # 毫秒级设置键 KEY_NAME 的过期时间，MILLISECONDS 为毫秒数。
+PEXPIRE KEY_NAME MILLISECONDS
 # PEXPIRE 是 Precise Expire 的缩写，毫秒级设置过期时间
 
-PEXPIREAT KEY_NAME TIMESTAMP
 # 毫秒级设置键 KEY_NAME 的过期时间，TIMESTAMP 为时间戳。
+PEXPIREAT KEY_NAME TIMESTAMP
 # PEXPIREAT 是 Precise Expire At 的缩写，毫秒级设置精确过期时间点
 
-PERSIST KEY
 # 删除键 KEY 的过期时间，KEY 将持久保存。
+PERSIST KEY
 ```
 
-```bash [其他]
-KEYS PATTERN
+```bash [3]
 # 获取所有匹配 PATTERN 的键
+KEYS PATTERN
 # 比如 KEYS *
 # 表示获取所有键
 
-RANDOMKEY
 # 从当前数据库中随机返回一个 KEY。
+RANDOMKEY
 
-SCAN CURSOR [MATCH pattern] [COUNT count]
 # 迭代当前数据库中的键。
+SCAN CURSOR [MATCH pattern] [COUNT count]
 # 比如 SCAN 0 MATCH * COUNT 10
 # 表示从索引 0 开始，每次迭代返回 10 个键。
 ```
