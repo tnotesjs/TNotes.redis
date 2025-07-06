@@ -14,10 +14,15 @@
   - [5.5. 【传统 Redis 命令】和【Lua 脚本】的差异对比](#55-传统-redis-命令和lua-脚本的差异对比)
   - [5.6. 其它类似场景](#56-其它类似场景)
   - [5.7. 小结 - 更复杂的业务场景（Lua 才是王道）](#57-小结---更复杂的业务场景lua-才是王道)
+- [6. 💻 使用 SCRIPT LOAD 和 EVALSHA 缓存脚本](#6--使用-script-load-和-evalsha-缓存脚本)
+- [7. 💻 检查某个键是否存在，如果存在则设置值（类似 `SETNX`）](#7--检查某个键是否存在如果存在则设置值类似-setnx)
+- [8. 💻 批量删除匹配模式的键（如 keys `session:`）](#8--批量删除匹配模式的键如-keys-session)
 
 <!-- endregion:toc -->
 
 ## 1. 📝 概述
+
+- 了解 Redis 脚本的基本使用。
 
 ## 2. 📒 Redis 脚本
 
@@ -35,6 +40,15 @@ EVAL "return {KEYS[1],KEYS[2],ARGV[1],ARGV[2]}" 2 key1 key2 first second
 # 3) "first"
 # 4) "second"
 ```
+
+- Lua 脚本的优势
+
+| 优势            | 描述                                        |
+| --------------- | ------------------------------------------- |
+| 🔐 原子性       | 多个 Redis 命令打包成一个脚本，保证原子执行 |
+| ⚡ 减少网络往返 | 多条命令只需一次请求                        |
+| 🧩 可复用       | 使用 `SCRIPT LOAD` + `EVALSHA` 提高性能     |
+| 📦 逻辑控制     | 支持 if/else、循环、函数等复杂逻辑          |
 
 ## 3. 📒 常用的 Redis 脚本命令
 
@@ -187,3 +201,61 @@ end
 - 传统的多个 Redis 命令就像没有锁的函数，可能被打断、被插队。
 - Redis 的单线程特性 + Lua 脚本保证了整个操作的 **原子性**，即使在高并发下也能确保数据一致性。
 - 对于简单自增这类单一原子命令就能搞定的场景，确实不需要 Lua 脚本；但对于涉及多个键、条件判断、流程控制的业务逻辑，Lua 脚本才是保障数据一致性和并发安全的最佳选择。
+
+## 6. 💻 使用 SCRIPT LOAD 和 EVALSHA 缓存脚本
+
+```bash
+SET key1 "value1"
+
+# 加载脚本到缓存
+SCRIPT LOAD "return redis.call('GET', KEYS[1])"
+
+# 假设返回的 SHA 是 "86f7e437faa5a7fce15d1ddcb9eaeaea35782b59"
+
+# 使用 EVALSHA 执行脚本
+EVALSHA 86f7e437faa5a7fce15d1ddcb9eaeaea35782b59 1 key1
+# 输出结果：
+# "value1"
+```
+
+- 如果你经常执行同一个脚本，可以先将其加载到缓存中，后续使用 SHA 标识符调用。
+- `SCRIPT LOAD` 将脚本保存在 Redis 内部缓存中；
+- `EVALSHA` 可以通过 SHA 来重复调用该脚本，提高性能并减少网络传输。
+
+## 7. 💻 检查某个键是否存在，如果存在则设置值（类似 `SETNX`）
+
+```bash
+# 使用 Lua 脚本实现 SETNX 功能
+EVAL "if redis.call('GET', KEYS[1]) == false then redis.call('SET', KEYS[1], ARGV[1]); return 1; else return 0; end" 1 lock_key my_value
+# 输出结果（第一次运行）：
+(integer) 1
+# 输出结果（第二次运行）：
+(integer) 0
+```
+
+- 这个脚本实现了类似 `SETNX` 的功能，但更灵活，可扩展支持 `TTL` 等逻辑。
+
+## 8. 💻 批量删除匹配模式的键（如 keys `session:`）
+
+```bash
+# 添加几个测试键
+SET session:user:1001 "abc"
+SET session:user:1002 "def"
+SET session:user:1003 "ghi"
+
+KEYS session:user:*
+# 1) "session:user:1002"
+# 2) "session:user:1003"
+# 3) "session:user:1001"
+
+# 使用 Lua 脚本删除所有 session:user:* 键
+EVAL "local keys = redis.call('keys', 'session:user:*'); for i=1,#keys do redis.call('del', keys[i]); end; return #keys;" 0
+# 输出结果：
+(integer) 3
+# 说明成功删除了 3 个键
+
+KEYS session:user:*
+# (empty array)
+```
+
+- 注意：`KEYS` 操作在大数据量时会影响性能，生产环境建议使用 `SCAN` 替代。
