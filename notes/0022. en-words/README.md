@@ -48,5 +48,13 @@
     'standalone',
     'cluster',
     'sentinel',
+    'Sicily',
+    'Palermo',
+    'Catania',
+    'longitude',
+    'latitude',
+    'Geolocation',
+    'Geospatial',
+    'Geography',
   ]"
 />
