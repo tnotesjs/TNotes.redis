@@ -163,8 +163,19 @@
   - [6. 💻 `georadius`、`georadiusbymember`](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0020.%20Redis%20GEO/README.md#6--georadiusgeoradiusbymember)
   - [7. 💻 `geohash`](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0020.%20Redis%20GEO/README.md#7--geohash)
   - [8. 🔗 References](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0020.%20Redis%20GEO/README.md#8--references)
-- [ ] [0021. Redis Stream](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md)
+- [x] [0021. Redis Stream](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md)
   - [1. 📝 概述](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#1--概述)
+  - [2. 📒 Redis Stream](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#2--redis-stream)
+  - [3. 📒 消息队列相关命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#3--消息队列相关命令)
+  - [4. 💻 XADD](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#4--xadd)
+  - [5. 💻 XTRIM](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#5--xtrim)
+  - [6. 💻 XDEL](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#6--xdel)
+  - [7. 💻 清空 Redis Stream 中的某个流](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#7--清空-redis-stream-中的某个流)
+  - [8. 💻 XLEN](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#8--xlen)
+  - [9. 💻 XRANGE](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#9--xrange)
+  - [10. 💻 XREAD](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#10--xread)
+  - [11. 🆚 `XREAD` 与 `XRANGE` 的区别](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#11--xread-与-xrange-的区别)
+  - [12. 📒 消费者组相关命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream/README.md#12--消费者组相关命令)
 
 ## 7. en-words
 
