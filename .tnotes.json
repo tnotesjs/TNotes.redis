@@ -13,15 +13,18 @@
     "demos",
     "assets"
   ],
-  "rootDocsSrcDir": "../_/docs/src",
-  "home.features.item": {
+  "rootSidebarDir": "../_/sidebars",
+  "root_item": {
     "icon": {
       "src": "https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/assets/icon--redis.svg"
     },
     "title": "redis",
     "completed_notes_count": 24,
     "details": "redis 笔记",
-    "link": "https://tdahuyou.github.io/TNotes.redis/"
+    "link": "https://tdahuyou.github.io/TNotes.redis/",
+    "created_at": 1751462200000,
+    "updated_at": 1753580661000,
+    "days_since_birth": 9501
   },
   "port": 9501,
   "menuItems": [
