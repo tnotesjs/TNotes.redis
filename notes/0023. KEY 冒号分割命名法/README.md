@@ -59,15 +59,15 @@ keys part1:*
 
 ::: swiper
 
-![图 5](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-57-29.png)
+![1](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-57-29.png)
 
-![图 6](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-58-02.png)
+![2](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-58-02.png)
 
-![图 7](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-58-38.png)
+![3](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-58-38.png)
 
-![图 4](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-55-25.png)
+![4](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-55-25.png)
 
-![图 3](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-54-41.png)
+![5](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-54-41.png)
 
 :::
 
@@ -75,11 +75,11 @@ keys part1:*
 
 ::: swiper
 
-![图 0](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-52-59.png)
+![1](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-52-59.png)
 
-![图 1](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-53-21.png)
+![2](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-53-21.png)
 
-![图 2](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-53-31.png)
+![3](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-53-31.png)
 
 :::
 
