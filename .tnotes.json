@@ -13,7 +13,7 @@
     "demos",
     "assets"
   ],
-  "rootSidebarDir": "../_/sidebars",
+  "rootSidebarDir": "../TNotes/sidebars",
   "root_item": {
     "icon": {
       "src": "https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/assets/icon--redis.svg"
@@ -23,7 +23,7 @@
     "details": "redis 笔记",
     "link": "https://tdahuyou.github.io/TNotes.redis/",
     "created_at": 1751462200000,
-    "updated_at": 1754494585683,
+    "updated_at": 1757163552136,
     "days_since_birth": 9501
   },
   "port": 9501,
@@ -62,7 +62,7 @@
     },
     {
       "ariaLabel": "TNotes.redis github 仓库链接",
-      "link": "https://github.com/Tdahuyou/TNotes.redis",
+      "link": "https://github.com/tnotesjs/TNotes.redis",
       "icon": "github"
     }
   ],
