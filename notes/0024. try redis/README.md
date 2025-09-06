@@ -1,4 +1,4 @@
-# [0024. try redis](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0024.%20try%20redis)
+# [0024. try redis](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0024.%20try%20redis)
 
 <!-- region:toc -->
 

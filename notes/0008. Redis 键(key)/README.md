@@ -1,4 +1,4 @@
-# [0008. Redis 键(key)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0008.%20Redis%20%E9%94%AE(key))
+# [0008. Redis 键(key)](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0008.%20Redis%20%E9%94%AE(key))
 
 <!-- region:toc -->
 

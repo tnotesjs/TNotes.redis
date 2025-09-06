@@ -1,4 +1,4 @@
-# [0002. redis 简介](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0002.%20redis%20%E7%AE%80%E4%BB%8B)
+# [0002. redis 简介](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0002.%20redis%20%E7%AE%80%E4%BB%8B)
 
 <!-- region:toc -->
 

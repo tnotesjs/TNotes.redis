@@ -1,4 +1,4 @@
-# [0022. en-words](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0022.%20en-words)
+# [0022. en-words](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0022.%20en-words)
 
 <!-- region:toc -->
 

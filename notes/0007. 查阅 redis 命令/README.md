@@ -1,4 +1,4 @@
-# [0007. 查阅 redis 命令](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0007.%20%E6%9F%A5%E9%98%85%20redis%20%E5%91%BD%E4%BB%A4)
+# [0007. 查阅 redis 命令](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0007.%20%E6%9F%A5%E9%98%85%20redis%20%E5%91%BD%E4%BB%A4)
 
 <!-- region:toc -->
 

@@ -1,4 +1,4 @@
-# [0004. 通过 homebrew 在 macos 上安装 redis](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0004.%20%E9%80%9A%E8%BF%87%20homebrew%20%E5%9C%A8%20macos%20%E4%B8%8A%E5%AE%89%E8%A3%85%20redis)
+# [0004. 通过 homebrew 在 macos 上安装 redis](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0004.%20%E9%80%9A%E8%BF%87%20homebrew%20%E5%9C%A8%20macos%20%E4%B8%8A%E5%AE%89%E8%A3%85%20redis)
 
 <!-- region:toc -->
 

@@ -1,4 +1,4 @@
-# [0005. 验证 Redis 是否安装成功](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0005.%20%E9%AA%8C%E8%AF%81%20Redis%20%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F)
+# [0005. 验证 Redis 是否安装成功](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0005.%20%E9%AA%8C%E8%AF%81%20Redis%20%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F)
 
 <!-- region:toc -->
 

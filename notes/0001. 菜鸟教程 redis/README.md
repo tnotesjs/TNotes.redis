@@ -1,4 +1,4 @@
-# [0001. 菜鸟教程 redis](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0001.%20%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B%20redis)
+# [0001. 菜鸟教程 redis](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0001.%20%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B%20redis)
 
 <!-- region:toc -->
 

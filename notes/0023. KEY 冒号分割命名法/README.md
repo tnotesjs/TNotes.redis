@@ -1,4 +1,4 @@
-# [0023. KEY 冒号分割命名法](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95)
+# [0023. KEY 冒号分割命名法](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0023.%20KEY%20%E5%86%92%E5%8F%B7%E5%88%86%E5%89%B2%E5%91%BD%E5%90%8D%E6%B3%95)
 
 <!-- region:toc -->
 

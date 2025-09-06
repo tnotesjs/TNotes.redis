@@ -1,4 +1,4 @@
-# [0003. Install Redis from Source](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0003.%20Install%20Redis%20from%20Source)
+# [0003. Install Redis from Source](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0003.%20Install%20Redis%20from%20Source)
 
 <!-- region:toc -->
 

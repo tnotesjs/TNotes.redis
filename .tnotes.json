@@ -1,7 +1,9 @@
 {
   "author": "tnotesjs",
   "repoName": "TNotes.redis",
-  "keywords": ["TNotes.redis"],
+  "keywords": [
+    "TNotes.redis"
+  ],
   "ignore_dirs": [
     ".vscode",
     "0000",
@@ -21,7 +23,7 @@
     "details": "redis 笔记",
     "link": "https://tnotesjs.github.io/TNotes.redis/",
     "created_at": 1751462200000,
-    "updated_at": 1757163552136,
+    "updated_at": 1757172135782,
     "days_since_birth": 9501
   },
   "port": 9501,

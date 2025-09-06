@@ -1,4 +1,4 @@
-# [0021. Redis Stream](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream)
+# [0021. Redis Stream](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0021.%20Redis%20Stream)
 
 <!-- region:toc -->
 

@@ -1,4 +1,4 @@
-# [0006. Redis 命令大小写规范](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0006.%20Redis%20%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%B0%8F%E5%86%99%E8%A7%84%E8%8C%83)
+# [0006. Redis 命令大小写规范](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0006.%20Redis%20%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%B0%8F%E5%86%99%E8%A7%84%E8%8C%83)
 
 <!-- region:toc -->
 

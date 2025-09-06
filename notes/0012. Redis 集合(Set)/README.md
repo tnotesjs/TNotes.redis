@@ -1,4 +1,4 @@
-# [0012. Redis 集合(Set)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0012.%20Redis%20%E9%9B%86%E5%90%88(Set))
+# [0012. Redis 集合(Set)](https://github.com/tnotesjs/TNotes.redis/tree/main/notes/0012.%20Redis%20%E9%9B%86%E5%90%88(Set))
 
 <!-- region:toc -->
 
