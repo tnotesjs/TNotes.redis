@@ -1,4 +1,4 @@
-# [0009. Redis 字符串(String)](https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String))
+# [0009. Redis 字符串(String)](<https://github.com/Tdahuyou/TNotes.redis/tree/main/notes/0009.%20Redis%20%E5%AD%97%E7%AC%A6%E4%B8%B2(String)>)
 
 <!-- region:toc -->
 
@@ -153,4 +153,4 @@ GET bit_key # ASCII 'a' (0b01100001)
 
 - https://www.runoob.com/w3cnote/ascii.html
   - 菜鸟教程 ASCII 表
-  - ![图 0](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-09-33-09.png)
+  - ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-09-33-09.png)

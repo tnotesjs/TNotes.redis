@@ -14,6 +14,6 @@
 ## 2. 💻 验证 Redis 是否安装成功
 
 - `redis-server` 启动 redis 服务
-  - ![图 0](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-02-22-36-41.png)
+  - ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-02-22-36-41.png)
 - `redis-cli` 另起一个终端窗口，测试 Redis 是否启动成功
-  - ![图 1](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-02-22-38-43.png)
+  - ![图 1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-02-22-38-43.png)

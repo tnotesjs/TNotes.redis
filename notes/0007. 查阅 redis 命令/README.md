@@ -15,7 +15,7 @@
 
 ## 2. 🔍 `SET` Command
 
-![图 0](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-03-17-49-26.png)
+![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-03-17-49-26.png)
 
 - 以 SET 命令的查询结果为例，通过文档，我们可以了解到有关 SET 命令的以下信息：
 - Syntax 该命令的语法
@@ -25,14 +25,14 @@
 - Options 该命令的参数选项
 - Examples 该命令的示例用法
   - 注：官方提供的 demo 组件是可键入命令实现交互的
-  - ![图 1](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-03-18-01-17.png)
-  - ![图 2](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-03-18-01-51.png)
+  - ![图 1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-03-18-01-17.png)
+  - ![图 2](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-03-18-01-51.png)
 - Patterns 关于该命令的常见使用模式的指导，例如实现锁机制、计数器、限流等典型场景。
   - 在不同的业务或技术场景下，某个 Redis 命令应该如何使用，以及常见的最佳实践。
   - 它帮助开发者理解命令的实际用途，并提供典型用例的指导。
 - Return information 该命令的返回值说明
 - Code examples 一些主流语言的示例代码
-  - ![图 3](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-03-18-02-25.png)
+  - ![图 3](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-03-18-02-25.png)
 - History 有关该命令的一些历史信息
 
 ## 3. 🤔 官方文档中的 “ACL categories” 是什么？
@@ -66,7 +66,7 @@ ACL SETUSER john -@slow
 
 - https://redis.io/docs/latest/commands/
   - 查阅 redis 最新的命令
-  - ![图 0](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-03-22-19-02.png)
+  - ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-03-22-19-02.png)
 - https://redis.io/docs/latest/commands/set/
   - set command
 - https://redis.io/docs/latest/commands/acl/

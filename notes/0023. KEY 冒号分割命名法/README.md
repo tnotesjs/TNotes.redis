@@ -59,15 +59,15 @@ keys part1:*
 
 ::: swiper
 
-![1](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-57-29.png)
+![1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-10-57-29.png)
 
-![2](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-58-02.png)
+![2](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-10-58-02.png)
 
-![3](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-58-38.png)
+![3](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-10-58-38.png)
 
-![4](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-55-25.png)
+![4](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-10-55-25.png)
 
-![5](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-54-41.png)
+![5](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-10-54-41.png)
 
 :::
 
@@ -75,11 +75,11 @@ keys part1:*
 
 ::: swiper
 
-![1](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-52-59.png)
+![1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-10-52-59.png)
 
-![2](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-53-21.png)
+![2](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-10-53-21.png)
 
-![3](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-04-10-53-31.png)
+![3](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-10-53-31.png)
 
 :::
 

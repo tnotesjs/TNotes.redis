@@ -25,7 +25,7 @@
 
 ## 3. 📒 Redis 作者及发布时间
 
-- ![图 1](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-02-21-36-51.png)
+- ![图 1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-02-21-36-51.png)
 
 > 现在时间：`2025.07.02`
 
@@ -65,6 +65,6 @@ Redis 与其他 key-value 存储系统的主要区别在于其提供了丰富的
   - redis 官网
 - https://github.com/antirez
   - github - Salvatore Sanfilippo
-  - ![图 0](https://cdn.jsdelivr.net/gh/Tdahuyou/imgs@main/2025-07-02-21-35-03.png)
+  - ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-02-21-35-03.png)
 - https://zh.wikipedia.org/zh-cn/Redis
   - wiki redis
