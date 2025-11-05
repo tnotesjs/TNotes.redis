@@ -5,9 +5,9 @@
 - [1. 📝 概述](#1--概述)
 - [2. 💻 创建并使用在线的 redis 数据库](#2--创建并使用在线的-redis-数据库)
   - [2.1. 多种连接方式](#21-多种连接方式)
-    - [2.1.1. Redis Insight](#211-redis-insight)
-    - [2.1.2. Redis CLI](#212-redis-cli)
-    - [2.1.3. Redis Client](#213-redis-client)
+    - [Redis Insight](#redis-insight)
+    - [Redis CLI](#redis-cli)
+    - [Redis Client](#redis-client)
   - [2.2. 使用 CLI 来连接 redis 数据库](#22-使用-cli-来连接-redis-数据库)
   - [2.3. 使用 VSCode redis 插件来连接 redis 数据库](#23-使用-vscode-redis-插件来连接-redis-数据库)
 - [3. 🔍 可视化工具会自动识别“命名空间”](#3--可视化工具会自动识别命名空间)
@@ -42,16 +42,16 @@
 3. Redis Client：通过多种主流的客户端连接。
 4. 利用其它客户端工具来连接。
 
-#### 2.1.1. Redis Insight
+#### Redis Insight
 
 - ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-11-02-57.png)
 - ![图 4](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-10-55-25.png)
 
-#### 2.1.2. Redis CLI
+#### Redis CLI
 
 - ![图 3](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-11-06-22.png)
 
-#### 2.1.3. Redis Client
+#### Redis Client
 
 - ![图 1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-11-04-49.png)
 - ![图 2](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-04-11-05-00.png)
