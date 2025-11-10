@@ -2,13 +2,13 @@
 
 <!-- region:toc -->
 
-  - [1. redis 学习资源](#1-redis-学习资源)
-  - [2. 认识 redis](#2-认识-redis)
-  - [3. 安装 redis](#3-安装-redis)
-  - [4. 快速体验 redis](#4-快速体验-redis)
-  - [5. redis 规范](#5-redis-规范)
-  - [6. redis 命令](#6-redis-命令)
-  - [7. en-words](#7-en-words)
+- [1. redis 学习资源](#1-redis-学习资源)
+- [2. 认识 redis](#2-认识-redis)
+- [3. 安装 redis](#3-安装-redis)
+- [4. 快速体验 redis](#4-快速体验-redis)
+- [5. redis 规范](#5-redis-规范)
+- [6. redis 命令](#6-redis-命令)
+- [7. en-words](#7-en-words)
 
 <!-- endregion:toc -->
 
