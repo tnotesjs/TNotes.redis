@@ -19,11 +19,18 @@
       "src": "https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/assets/icon--redis.svg"
     },
     "title": "redis",
-    "completed_notes_count": 24,
+    "completed_notes_count": {
+      "25.07": 24,
+      "25.08": 24,
+      "25.09": 24,
+      "25.10": 24,
+      "25.11": 24,
+      "25.12": 24
+    },
     "details": "redis 笔记",
     "link": "https://tnotesjs.github.io/TNotes.redis/",
     "created_at": 1751462200000,
-    "updated_at": 1762780412437,
+    "updated_at": 1764548510379,
     "days_since_birth": 9501
   },
   "port": 9501,
