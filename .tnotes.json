@@ -20,6 +20,12 @@
     },
     "title": "redis",
     "completed_notes_count": {
+      "25.01": 0,
+      "25.02": 0,
+      "25.03": 0,
+      "25.04": 0,
+      "25.05": 0,
+      "25.06": 0,
       "25.07": 24,
       "25.08": 24,
       "25.09": 24,
@@ -30,7 +36,7 @@
     "details": "redis 笔记",
     "link": "https://tnotesjs.github.io/TNotes.redis/",
     "created_at": 1751462200000,
-    "updated_at": 1764578505069,
+    "updated_at": 1765719228660,
     "days_since_birth": 9501
   },
   "port": 9501,
