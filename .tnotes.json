@@ -31,12 +31,13 @@
       "25.09": 24,
       "25.10": 24,
       "25.11": 24,
-      "25.12": 24
+      "25.12": 24,
+      "26.01": 24
     },
     "details": "redis 笔记",
     "link": "https://tnotesjs.github.io/TNotes.redis/",
     "created_at": 1751462200000,
-    "updated_at": 1765719228660,
+    "updated_at": 1767227731168,
     "days_since_birth": 9501
   },
   "port": 9501,
