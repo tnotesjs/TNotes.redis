@@ -2,34 +2,34 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 Redis 简介](#2--redis-简介)
-- [3. 📒 Redis 作者及发布时间](#3--redis-作者及发布时间)
-- [4. 📒 Redis 的特点](#4--redis-的特点)
-- [5. 🤔 Redis 与其他 key-value 存储有什么不同？](#5--redis-与其他-key-value-存储有什么不同)
-- [6. 🔗 References](#6--references)
+- [1. 概述](#1-概述)
+- [2. Redis 简介](#2-redis-简介)
+- [3. Redis 作者及发布时间](#3-redis-作者及发布时间)
+- [4. Redis 的特点](#4-redis-的特点)
+- [5. Redis 与其他 key-value 存储有什么不同？](#5-redis-与其他-key-value-存储有什么不同)
+- [6. References](#6-references)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 对 redis 做一个概述
 - 本节内容主要搬运自“菜鸟教程 - redis”
 
-## 2. 📒 Redis 简介
+## 2. Redis 简介
 
 - REmote DIctionary Server(Redis) 是一个由 Salvatore Sanfilippo 写的 key-value 存储系统，是跨平台的非关系型数据库。
 - Redis 是一个开源的使用 ANSI C 语言编写、遵守 BSD 协议、支持网络、可基于内存、分布式、可选持久性的键值对(Key-Value)存储数据库，并提供多种语言的 API。
 - Redis 通常被称为数据结构服务器，因为值（value）可以是字符串(String)、哈希(Hash)、列表(list)、集合(sets)和有序集合(sorted sets)等类型。
 - Redis 是一个开源的内存数据库，遵守 BSD 协议，它提供了一个高性能的键值（key-value）存储系统，常用于缓存、消息队列、会话存储等应用场景。
 
-## 3. 📒 Redis 作者及发布时间
+## 3. Redis 作者及发布时间
 
 - ![图 1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-02-21-36-51.png)
 
 > 现在时间：`2025.07.02`
 
-## 4. 📒 Redis 的特点
+## 4. Redis 的特点
 
 - **性能极高**：Redis 以其极高的性能而著称，能够支持每秒数十万次的读写操作。这使得 Redis 成为处理高并发请求的理想选择，尤其是在需要快速响应的场景中，如缓存、会话管理、排行榜等。
 - **丰富的数据类型**：Redis 不仅支持基本的键值存储，还提供了丰富的数据类型，包括字符串、列表、集合、哈希表、有序集合等。这些数据类型为开发者提供了灵活的数据操作能力，使得 Redis 可以适应各种不同的应用场景。
@@ -42,7 +42,7 @@
 - **社区支持**：Redis 拥有一个活跃的开发者社区，提供了大量的文档、教程和第三方库，这为开发者提供了强大的支持和丰富的资源。
 - **跨平台兼容性**：Redis 可以在多种操作系统上运行，包括 Linux、macOS 和 Windows，这使得它能够在不同的技术栈中灵活部署。
 
-## 5. 🤔 Redis 与其他 key-value 存储有什么不同？
+## 5. Redis 与其他 key-value 存储有什么不同？
 
 Redis 与其他 key-value 存储系统的主要区别在于其提供了丰富的数据类型、高性能的读写能力、原子性操作、持久化机制、以及丰富的特性集。
 
@@ -57,7 +57,7 @@ Redis 与其他 key-value 存储系统的主要区别在于其提供了丰富的
 - **支持 Lua 脚本**：Redis 支持使用 Lua 脚本来编写复杂的操作，这些脚本可以在服务器端执行，提供了更多的灵活性和强大的功能。
 - **单线程模型**：尽管 Redis 是单线程的，但它通过高效的事件驱动模型来处理并发请求，确保了高性能和低延迟。
 
-## 6. 🔗 References
+## 6. References
 
 - https://github.com/redis/redis
   - github - Redis

@@ -2,18 +2,18 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 🔍 `SET` Command](#2--set-command)
-- [3. 🤔 官方文档中的 “ACL categories” 是什么？](#3--官方文档中的-acl-categories-是什么)
-- [4. 🔗 References](#4--references)
+- [1. 概述](#1-概述)
+- [2. `SET` Command](#2-set-command)
+- [3. 官方文档中的 “ACL categories” 是什么？](#3-官方文档中的-acl-categories-是什么)
+- [4. References](#4-references)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 以 `SET` 命令为例，简单介绍一下官方 redis commands 文档的基本结构。
 
-## 2. 🔍 `SET` Command
+## 2. `SET` Command
 
 ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-03-17-49-26.png)
 
@@ -35,7 +35,7 @@
   - ![图 3](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-07-03-18-02-25.png)
 - History 有关该命令的一些历史信息
 
-## 3. 🤔 官方文档中的 “ACL categories” 是什么？
+## 3. 官方文档中的 “ACL categories” 是什么？
 
 - `ACL categories: @write, @string, @slow`
   - ACL 是 Access Control List（访问控制列表）的缩写
@@ -62,7 +62,7 @@ ACL SETUSER john -@slow
 
 - 这样你就可以灵活控制用户的命令访问权限，以增强 Redis 实例的安全性和稳定性。
 
-## 4. 🔗 References
+## 4. References
 
 - https://redis.io/docs/latest/commands/
   - 查阅 redis 最新的命令

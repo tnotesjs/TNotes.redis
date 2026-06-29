@@ -2,25 +2,25 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 Redis hash](#2--redis-hash)
-- [3. 📒 常用的 redis hash 命令](#3--常用的-redis-hash-命令)
-- [4. 💻 基础示例](#4--基础示例)
-- [5. 💻 hash 编码方式](#5--hash-编码方式)
+- [1. 概述](#1-概述)
+- [2. Redis hash](#2-redis-hash)
+- [3. 常用的 redis hash 命令](#3-常用的-redis-hash-命令)
+- [4. 基础示例](#4-基础示例)
+- [5. hash 编码方式](#5-hash-编码方式)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 了解 hash 常用命令
 - 了解 redis hash 底层编码方式
 
-## 2. 📒 Redis hash
+## 2. Redis hash
 
 - Redis hash 是一个 string 类型的 field（字段） 和 value（值） 的映射表，hash 特别适合用于存储对象。
 - Redis 中每个 hash 可以存储 $2^{32} - 1$ 键值对（40 多亿）。
 
-## 3. 📒 常用的 redis hash 命令
+## 3. 常用的 redis hash 命令
 
 ::: code-group
 
@@ -78,7 +78,7 @@ HSCAN key cursor [MATCH pattern] [COUNT count]
 
 :::
 
-## 4. 💻 基础示例
+## 4. 基础示例
 
 ```bash
 # 设置哈希表 user:1000 的字段和值
@@ -142,7 +142,7 @@ HSCAN user:1000 0 MATCH * COUNT 10
 #    4) "26"
 ```
 
-## 5. 💻 hash 编码方式
+## 5. hash 编码方式
 
 ```bash
 HSET user:1000 name "Alice" age "26" gender "female" city "Shanghai" country "China"

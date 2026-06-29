@@ -2,19 +2,19 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 🔗 References](#2--references)
+- [1. 概述](#1-概述)
+- [2. References](#2-references)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 ```bash
 brew install redis
 # Homebrew 是在 macOS 上安装 Redis 的最简单方法。
 ```
 
-## 2. 🔗 References
+## 2. References
 
 - https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-on-mac-os/
   - 官方文档 - Install Redis on macOS

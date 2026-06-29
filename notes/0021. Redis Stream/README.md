@@ -2,22 +2,22 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 Redis Stream](#2--redis-stream)
-- [3. 📒 消息队列相关命令](#3--消息队列相关命令)
-- [4. 💻 XADD](#4--xadd)
-- [5. 💻 XTRIM](#5--xtrim)
-- [6. 💻 XDEL](#6--xdel)
-- [7. 💻 清空 Redis Stream 中的某个流](#7--清空-redis-stream-中的某个流)
-- [8. 💻 XLEN](#8--xlen)
-- [9. 💻 XRANGE](#9--xrange)
-- [10. 💻 XREAD](#10--xread)
-- [11. 🆚 `XREAD` 与 `XRANGE` 的区别](#11--xread-与-xrange-的区别)
-- [12. 📒 消费者组相关命令](#12--消费者组相关命令)
+- [1. 概述](#1-概述)
+- [2. Redis Stream](#2-redis-stream)
+- [3. 消息队列相关命令](#3-消息队列相关命令)
+- [4. XADD](#4-xadd)
+- [5. XTRIM](#5-xtrim)
+- [6. XDEL](#6-xdel)
+- [7. 清空 Redis Stream 中的某个流](#7-清空-redis-stream-中的某个流)
+- [8. XLEN](#8-xlen)
+- [9. XRANGE](#9-xrange)
+- [10. XREAD](#10-xread)
+- [11. `XREAD` 与 `XRANGE` 的区别](#11-xread-与-xrange-的区别)
+- [12. 消费者组相关命令](#12-消费者组相关命令)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 <!--
 菜鸟教程 Redis stream
@@ -30,7 +30,7 @@ https://www.runoob.com/redis/redis-stream.html
 - 了解消息队列（MQ，Message Queue）的两种实现方式（“Redis Stream”、“发布订阅”）之间的区别。
 - 了解消费队列相关命令的基本作用。
 
-## 2. 📒 Redis Stream
+## 2. Redis Stream
 
 - Redis Stream
   - Redis Stream 是 Redis 5.0 版本新增加的数据结构。
@@ -66,7 +66,7 @@ https://www.runoob.com/redis/redis-stream.html
     - 如果消费者 A 处理完 `1-0` 并发送 `XACK`，则 `1-0` 会从 `pending_ids` 中移除。
     - 若消费者 A 在处理 `2-0` 和 `3-0` 时发生异常退出，则这两条消息仍保留在 `pending_ids` 中，并可被其他消费者通过 `XCLAIM` 抢占处理。
 
-## 3. 📒 消息队列相关命令
+## 3. 消息队列相关命令
 
 - `XADD` 添加消息到末尾
 - `XTRIM` 对流进行修剪，限制长度
@@ -76,7 +76,7 @@ https://www.runoob.com/redis/redis-stream.html
 - `XREVRANGE` 反向获取消息列表，ID 从大到小
 - `XREAD` 以阻塞或非阻塞方式获取消息列表
 
-## 4. 💻 XADD
+## 4. XADD
 
 - 使用 XADD 向队列添加消息，如果指定的队列不存在，则创建一个队列，XADD 语法格式：`XADD key ID field value [field value ...]`
   - `key`：流名称，如果不存在就创建。
@@ -110,7 +110,7 @@ XRANGE mystream - + # 获取消息
 #       6) "value3"
 ```
 
-## 5. 💻 XTRIM
+## 5. XTRIM
 
 - 使用 XTRIM 对流进行修剪，限制长度，语法格式：`XTRIM key MAXLEN [~] count`
   - `key`：流名称
@@ -151,7 +151,7 @@ XRANGE mystream - +
 #       2) "David"
 ```
 
-## 6. 💻 XDEL
+## 6. XDEL
 
 - 使用 `XDEL` 删除消息，语法格式：`XDEL key ID [ID ...]`。
   - `key`：流名称
@@ -179,7 +179,7 @@ XRANGE mystream - +
 #       2) "3"
 ```
 
-## 7. 💻 清空 Redis Stream 中的某个流
+## 7. 清空 Redis Stream 中的某个流
 
 - 要 **清空 Redis Stream 中的某个流（如 `mystream`）中的所有消息**，有以下几种方式：
 - 方法一：使用 `XDEL` + `XRANGE` 删除所有消息（适用于小数据量）
@@ -226,7 +226,7 @@ DEL mystream
 
 :::
 
-## 8. 💻 XLEN
+## 8. XLEN
 
 - 使用 `XLEN` 获取流包含的元素数量，即消息长度，语法格式：`XLEN key`
   - `key`：流名称
@@ -254,7 +254,7 @@ XLEN mystream
 # (integer) 2
 ```
 
-## 9. 💻 XRANGE
+## 9. XRANGE
 
 - 使用 `XRANGE` 获取消息列表，会自动过滤已经删除的消息，语法格式：`XRANGE key start end [COUNT count]`
   - `key`：流名称
@@ -313,7 +313,7 @@ XRANGE mystream "1752330455579-0" +
 #       2) "David"
 ```
 
-## 10. 💻 XREAD
+## 10. XREAD
 
 - 使用 `XREAD` 以阻塞或非阻塞方式获取消息列表，语法格式：`XREAD [COUNT count] [BLOCK milliseconds] STREAMS key [key ...] id [id ...]`
   - `count`：可选参数，限制每次返回的消息数量。
@@ -397,7 +397,7 @@ XREAD STREAMS mystream notifications $ $
   - `$`：只读取调用命令后到达的新消息。
   - `<id>`：从指定 ID 之后的消息开始读取。
 
-## 11. 🆚 `XREAD` 与 `XRANGE` 的区别
+## 11. `XREAD` 与 `XRANGE` 的区别
 
 | 特性     | `XRANGE`           | `XREAD`                 |
 | -------- | ------------------ | ----------------------- |
@@ -406,7 +406,7 @@ XREAD STREAMS mystream notifications $ $
 | 多流支持 | ❌（单流操作）     | ✅（可同时监听多个流）  |
 | 典型场景 | 数据审计、批量处理 | 实时通知、事件驱动架构  |
 
-## 12. 📒 消费者组相关命令
+## 12. 消费者组相关命令
 
 - `XGROUP CREATE` 创建消费者组
 - `XREADGROUP GROUP` 读取消费者组中的消息

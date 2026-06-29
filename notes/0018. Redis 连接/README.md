@@ -2,17 +2,17 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 Redis 连接](#2--redis-连接)
-- [3. 💻 连接 Redis 服务](#3--连接-redis-服务)
+- [1. 概述](#1-概述)
+- [2. Redis 连接](#2-redis-连接)
+- [3. 连接 Redis 服务](#3-连接-redis-服务)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 了解 Redis 连接的相关命令及其基本使用。
 
-## 2. 📒 Redis 连接
+## 2. Redis 连接
 
 - Redis 连接命令主要是用于连接 redis 服务。
 
@@ -44,7 +44,7 @@ QUIT
 SELECT index
 ```
 
-## 3. 💻 连接 Redis 服务
+## 3. 连接 Redis 服务
 
 ::: code-group
 

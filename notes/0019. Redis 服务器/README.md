@@ -2,18 +2,18 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 Redis 服务常用命令](#2--redis-服务常用命令)
-- [3. 💻 INFO](#3--info)
-- [4. 💻 CLIENT](#4--client)
+- [1. 概述](#1-概述)
+- [2. Redis 服务常用命令](#2-redis-服务常用命令)
+- [3. INFO](#3-info)
+- [4. CLIENT](#4-client)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 了解 Redis 服务命令的基本使用。
 
-## 2. 📒 Redis 服务常用命令
+## 2. Redis 服务常用命令
 
 - Redis 服务器命令主要是用于管理 redis 服务。
 - 【1】基础管理
@@ -138,7 +138,7 @@ SYNC
 
 :::
 
-## 3. 💻 INFO
+## 3. INFO
 
 ```bash
 127.0.0.1:6379> INFO
@@ -928,7 +928,7 @@ db0_distrib_strings_sizes:2=1,4=1
 
 :::
 
-## 4. 💻 CLIENT
+## 4. CLIENT
 
 ```bash
 127.0.0.1:6379> CLIENT LIST

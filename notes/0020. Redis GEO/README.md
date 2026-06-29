@@ -2,22 +2,22 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 Redis GEO](#2--redis-geo)
-- [3. 💻 `geoadd`](#3--geoadd)
-- [4. 💻 `geopos`](#4--geopos)
-- [5. 💻 `geodist`](#5--geodist)
-- [6. 💻 `georadius`、`georadiusbymember`](#6--georadiusgeoradiusbymember)
-- [7. 💻 `geohash`](#7--geohash)
-- [8. 🔗 References](#8--references)
+- [1. 概述](#1-概述)
+- [2. Redis GEO](#2-redis-geo)
+- [3. `geoadd`](#3-geoadd)
+- [4. `geopos`](#4-geopos)
+- [5. `geodist`](#5-geodist)
+- [6. `georadius`、`georadiusbymember`](#6-georadiusgeoradiusbymember)
+- [7. `geohash`](#7-geohash)
+- [8. References](#8-references)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 了解 Redis GEO 的基本使用。
 
-## 2. 📒 Redis GEO
+## 2. Redis GEO
 
 Redis GEO 主要用于存储 **地理位置信息**，并对存储的信息进行操作，该功能在 Redis 3.2 版本新增。
 
@@ -30,7 +30,7 @@ Redis GEO 操作方法有：
 - `georadiusbymember`：根据储存在位置集合里面的某个地点获取指定范围内的地理位置集合。
 - `geohash`：返回一个或多个位置对象的 geohash 值。
 
-## 3. 💻 `geoadd`
+## 3. `geoadd`
 
 - geoadd 用于存储指定的地理空间位置，可以将一个或多个经度(longitude)、纬度(latitude)、位置名称(member)添加到指定的 key 中。
 - geoadd 语法格式如下：
@@ -70,7 +70,7 @@ GEORADIUS Sicily 15 37 200 km
 > - **Palermo**：巴勒莫，是西西里岛的首府，位于岛屿的西北海岸，具有典型的地中海气候。
 > - **Catania**：卡塔尼亚，位于西西里岛东岸，靠近埃特纳火山，是岛上重要的工业与旅游城市。
 
-## 4. 💻 `geopos`
+## 4. `geopos`
 
 - geopos 用于从给定的 key 里返回所有指定名称(member)的位置（经度和纬度），不存在的返回 nil。
 - geopos 语法格式如下：
@@ -128,7 +128,7 @@ GEOPOS Sicily Palermo Catania NonExisting
 | `GEOADD` 写入 | 用户可输入低精度（如 6 位小数） | 接口友好，便于手动测试或脚本编写 |
 | `GEOPOS` 读取 | 显示高精度（15~17 位小数） | Redis 内部使用 double 存储，并返回完整数值 |
 
-## 5. 💻 `geodist`
+## 5. `geodist`
 
 - geodist 用于返回两个给定位置之间的距离。
 - geodist 语法格式如下：
@@ -164,7 +164,7 @@ GEODIST Sicily Foo Bar
 
 > 转换关系：`1km = 0.621371mi = 0.3048ft`
 
-## 6. 💻 `georadius`、`georadiusbymember`
+## 6. `georadius`、`georadiusbymember`
 
 - georadius 以给定的经纬度为中心， 返回键包含的位置元素当中， 与中心的距离不超过给定最大距离的所有位置元素。
 - georadiusbymember 和 GEORADIUS 命令一样， 都可以找出位于指定范围内的元素， 但是 georadiusbymember 的中心点是由给定的位置元素决定的， 而不是使用经度和纬度来决定中心点。
@@ -231,7 +231,7 @@ GEORADIUSBYMEMBER Sicily Agrigento 100 km
 
 :::
 
-## 7. 💻 `geohash`
+## 7. `geohash`
 
 - Redis GEO 使用 geohash 来保存地理位置的坐标。
 - geohash 用于获取一个或多个位置元素的 geohash 值。
@@ -250,7 +250,7 @@ GEOHASH Sicily Palermo Catania
 # 2) "sqdtr74hyu0"     # Catania 的 geohash 编码，用于高效存储和查询地理坐标
 ```
 
-## 8. 🔗 References
+## 8. References
 
 - https://zh.wikipedia.org/zh-cn/%E4%B8%96%E7%95%8C%E5%A4%A7%E5%9C%B0%E6%B5%8B%E9%87%8F%E7%B3%BB%E7%BB%9F
   - wiki

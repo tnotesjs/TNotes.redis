@@ -2,11 +2,11 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 Redis 脚本](#2--redis-脚本)
-- [3. 📒 常用的 Redis 脚本命令](#3--常用的-redis-脚本命令)
-- [4. 💻 EVAL 基本使用（返回 KEYS 和 ARGV）](#4--eval-基本使用返回-keys-和-argv)
-- [5. 💻 使用 Lua 脚本实现计数器（原子自增）](#5--使用-lua-脚本实现计数器原子自增)
+- [1. 概述](#1-概述)
+- [2. Redis 脚本](#2-redis-脚本)
+- [3. 常用的 Redis 脚本命令](#3-常用的-redis-脚本命令)
+- [4. EVAL 基本使用（返回 KEYS 和 ARGV）](#4-eval-基本使用返回-keys-和-argv)
+- [5. 使用 Lua 脚本实现计数器（原子自增）](#5-使用-lua-脚本实现计数器原子自增)
   - [5.1. 场景描述](#51-场景描述)
   - [5.2. 传统方式和 Lua 脚本方式的代码实现](#52-传统方式和-lua-脚本方式的代码实现)
   - [5.3. 传统方式存在的问题](#53-传统方式存在的问题)
@@ -14,17 +14,17 @@
   - [5.5. 【传统 Redis 命令】和【Lua 脚本】的差异对比](#55-传统-redis-命令和lua-脚本的差异对比)
   - [5.6. 其它类似场景](#56-其它类似场景)
   - [5.7. 小结 - 更复杂的业务场景（Lua 才是王道）](#57-小结---更复杂的业务场景lua-才是王道)
-- [6. 💻 使用 SCRIPT LOAD 和 EVALSHA 缓存脚本](#6--使用-script-load-和-evalsha-缓存脚本)
-- [7. 💻 检查某个键是否存在，如果存在则设置值（类似 `SETNX`）](#7--检查某个键是否存在如果存在则设置值类似-setnx)
-- [8. 💻 批量删除匹配模式的键（如 keys `session:`）](#8--批量删除匹配模式的键如-keys-session)
+- [6. 使用 SCRIPT LOAD 和 EVALSHA 缓存脚本](#6-使用-script-load-和-evalsha-缓存脚本)
+- [7. 检查某个键是否存在，如果存在则设置值（类似 `SETNX`）](#7-检查某个键是否存在如果存在则设置值类似-setnx)
+- [8. 批量删除匹配模式的键（如 keys `session:`）](#8-批量删除匹配模式的键如-keys-session)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 了解 Redis 脚本的基本使用。
 
-## 2. 📒 Redis 脚本
+## 2. Redis 脚本
 
 - Redis 脚本使用 Lua 解释器来执行脚本。
 - Redis 2.6 版本通过内嵌支持 Lua 环境。执行脚本的常用命令为 EVAL。
@@ -50,7 +50,7 @@ EVAL "return {KEYS[1],KEYS[2],ARGV[1],ARGV[2]}" 2 key1 key2 first second
 | 🧩 可复用       | 使用 `SCRIPT LOAD` + `EVALSHA` 提高性能     |
 | 📦 逻辑控制     | 支持 if/else、循环、函数等复杂逻辑          |
 
-## 3. 📒 常用的 Redis 脚本命令
+## 3. 常用的 Redis 脚本命令
 
 ```bash
 # 执行 Lua 脚本。
@@ -72,7 +72,7 @@ SCRIPT KILL
 SCRIPT LOAD script
 ```
 
-## 4. 💻 EVAL 基本使用（返回 KEYS 和 ARGV）
+## 4. EVAL 基本使用（返回 KEYS 和 ARGV）
 
 ```bash
 # 脚本返回传入的键和参数
@@ -87,7 +87,7 @@ EVAL "return {KEYS[1], KEYS[2], ARGV[1], ARGV[2]}" 2 key1 key2 value1 value2
 - `ARGV` 是额外的参数列表；
 - `2` 表示传入了两个键（`key1`, `key2`）；
 
-## 5. 💻 使用 Lua 脚本实现计数器（原子自增）
+## 5. 使用 Lua 脚本实现计数器（原子自增）
 
 - 通过一个点赞的需求场景，来了解 lua 脚本和传统 redis 命令之间的差异。
 
@@ -202,7 +202,7 @@ end
 - Redis 的单线程特性 + Lua 脚本保证了整个操作的 **原子性**，即使在高并发下也能确保数据一致性。
 - 对于简单自增这类单一原子命令就能搞定的场景，确实不需要 Lua 脚本；但对于涉及多个键、条件判断、流程控制的业务逻辑，Lua 脚本才是保障数据一致性和并发安全的最佳选择。
 
-## 6. 💻 使用 SCRIPT LOAD 和 EVALSHA 缓存脚本
+## 6. 使用 SCRIPT LOAD 和 EVALSHA 缓存脚本
 
 ```bash
 SET key1 "value1"
@@ -222,7 +222,7 @@ EVALSHA 86f7e437faa5a7fce15d1ddcb9eaeaea35782b59 1 key1
 - `SCRIPT LOAD` 将脚本保存在 Redis 内部缓存中；
 - `EVALSHA` 可以通过 SHA 来重复调用该脚本，提高性能并减少网络传输。
 
-## 7. 💻 检查某个键是否存在，如果存在则设置值（类似 `SETNX`）
+## 7. 检查某个键是否存在，如果存在则设置值（类似 `SETNX`）
 
 ```bash
 # 使用 Lua 脚本实现 SETNX 功能
@@ -235,7 +235,7 @@ EVAL "if redis.call('GET', KEYS[1]) == false then redis.call('SET', KEYS[1], ARG
 
 - 这个脚本实现了类似 `SETNX` 的功能，但更灵活，可扩展支持 `TTL` 等逻辑。
 
-## 8. 💻 批量删除匹配模式的键（如 keys `session:`）
+## 8. 批量删除匹配模式的键（如 keys `session:`）
 
 ```bash
 # 添加几个测试键

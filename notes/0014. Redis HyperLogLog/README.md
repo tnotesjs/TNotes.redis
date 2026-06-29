@@ -2,20 +2,20 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 HyperLogLog](#2--hyperloglog)
-- [3. 🤔 什么是基数？](#3--什么是基数)
-- [4. 📒 常用的 redis HyperLogLog 命令](#4--常用的-redis-hyperloglog-命令)
-- [5. 💻 基础示例](#5--基础示例)
-- [6. 🤔 `PFADD`、`PFCOUNT`、`PFMERGE`…… 这些命令中的 `PF` 是什么？](#6--pfaddpfcountpfmerge-这些命令中的-pf-是什么)
+- [1. 概述](#1-概述)
+- [2. HyperLogLog](#2-hyperloglog)
+- [3. 什么是基数？](#3-什么是基数)
+- [4. 常用的 redis HyperLogLog 命令](#4-常用的-redis-hyperloglog-命令)
+- [5. 基础示例](#5-基础示例)
+- [6. `PFADD`、`PFCOUNT`、`PFMERGE`…… 这些命令中的 `PF` 是什么？](#6-pfaddpfcountpfmerge-这些命令中的-pf-是什么)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 介绍了 Redis 中的 HyperLogLog 是什么，以及基本使用，包括其适用场景、特点和相关命令。
 
-## 2. 📒 HyperLogLog
+## 2. HyperLogLog
 
 - Redis 在 2.8.9 版本添加了 HyperLogLog 结构。
 - Redis HyperLogLog 是用来做 **基数统计** 的算法，其优点在于：即使输入元素数量极大，计算所需的空间始终是固定且很小的。
@@ -23,12 +23,12 @@
 - 但是，因为 HyperLogLog 只会根据输入元素来计算基数，而 **不存储输入元素本身**，所以 HyperLogLog 不能像集合那样，返回输入的各个元素。
 - Redis HyperLogLog 适用于大规模数据场景下的 UV（独立访客）统计、去重计数等需求。
 
-## 3. 🤔 什么是基数？
+## 3. 什么是基数？
 
 - 基数是指一个数据集中**不重复的元素个数**。例如数据集 `{1, 3, 5, 7, 5, 7, 8}` 的基数为 `5`（即 `{1, 3, 5, 7, 8}`）。
 - HyperLogLog 能在误差可接受范围内快速估算基数。
 
-## 4. 📒 常用的 redis HyperLogLog 命令
+## 4. 常用的 redis HyperLogLog 命令
 
 ::: code-group
 
@@ -49,7 +49,7 @@ PFMERGE destkey sourcekey [sourcekey ...]
 
 :::
 
-## 5. 💻 基础示例
+## 5. 基础示例
 
 ```bash
 # 添加元素到 HyperLogLog
@@ -77,7 +77,7 @@ PFCOUNT hll3
 # (integer) 10 （估计有 10 个不同的元素）
 ```
 
-## 6. 🤔 `PFADD`、`PFCOUNT`、`PFMERGE`…… 这些命令中的 `PF` 是什么？
+## 6. `PFADD`、`PFCOUNT`、`PFMERGE`…… 这些命令中的 `PF` 是什么？
 
 - `PF` 指的是 Philippe Flajolet，他是提出 HyperLogLog 算法的计算机科学家之一。Redis 使用这一命名方式来纪念他的贡献。
 - Redis 的创始人 Salvatore Sanfilippo（又称 antirez）为了致敬这些研究者，在实现 HyperLogLog 相关命令时使用了他们的名字缩写。`PFADD`、`PFCOUNT` 和 `PFMERGE` 中的 `PF` 即来源于此。

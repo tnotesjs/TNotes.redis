@@ -2,19 +2,19 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 Redis 发布订阅](#2--redis-发布订阅)
-- [3. 📒 Redis 发布订阅常用命令](#3--redis-发布订阅常用命令)
-- [4. 💻 订阅发布](#4--订阅发布)
-- [5. 💻 demos.1 - nodejs 订阅和发布](#5--demos1---nodejs-订阅和发布)
+- [1. 概述](#1-概述)
+- [2. Redis 发布订阅](#2-redis-发布订阅)
+- [3. Redis 发布订阅常用命令](#3-redis-发布订阅常用命令)
+- [4. 订阅发布](#4-订阅发布)
+- [5. demos.1 - nodejs 订阅和发布](#5-demos1---nodejs-订阅和发布)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 了解 redis 中的订阅和发布。
 
-## 2. 📒 Redis 发布订阅
+## 2. Redis 发布订阅
 
 - Redis 发布订阅 (pub/sub) 是一种消息通信模式：发送者 (pub) 发送消息，订阅者 (sub) 接收消息。
 - Redis 客户端可以订阅任意数量的频道。
@@ -47,7 +47,7 @@ sequenceDiagram
     chan1 -->> C5: message
 ```
 
-## 3. 📒 Redis 发布订阅常用命令
+## 3. Redis 发布订阅常用命令
 
 ```bash
 # 订阅一个或多个符合给定模式的频道。
@@ -69,7 +69,7 @@ SUBSCRIBE channel [channel ...]
 UNSUBSCRIBE [channel [channel ...]]
 ```
 
-## 4. 💻 订阅发布
+## 4. 订阅发布
 
 ::: code-group
 
@@ -115,7 +115,7 @@ SUBSCRIBE myChannel
 # 3) "Learn redis by TNotes.redis notes"
 ```
 
-## 5. 💻 demos.1 - nodejs 订阅和发布
+## 5. demos.1 - nodejs 订阅和发布
 
 <<< ./demos/1/1.js
 
@@ -152,7 +152,7 @@ subscriber.subscribe('chat_room_1', (msg) => {
 // 示例：订单状态更新后，通知所有相关用户界面更新。
 publisher.publish(
   'order_updates',
-  JSON.stringify({ orderId: '1001', status: 'paid' })
+  JSON.stringify({ orderId: '1001', status: 'paid' }),
 )
 ```
 

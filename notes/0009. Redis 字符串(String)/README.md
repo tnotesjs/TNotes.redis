@@ -2,18 +2,18 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 常用的 redis 字符串命令](#2--常用的-redis-字符串命令)
-- [3. 💻 基础示例](#3--基础示例)
-- [4. 🔗 References](#4--references)
+- [1. 概述](#1-概述)
+- [2. 常用的 redis 字符串命令](#2-常用的-redis-字符串命令)
+- [3. 基础示例](#3-基础示例)
+- [4. References](#4-references)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - Redis 字符串数据类型的相关命令用于管理 redis 字符串值。
 
-## 2. 📒 常用的 redis 字符串命令
+## 2. 常用的 redis 字符串命令
 
 ::: code-group
 
@@ -91,7 +91,7 @@ SETRANGE key offset value
 
 :::
 
-## 3. 💻 基础示例
+## 3. 基础示例
 
 ```bash
 # 设置 key 的值
@@ -149,7 +149,7 @@ GET bit_key # ASCII 'a' (0b01100001)
 # a
 ```
 
-## 4. 🔗 References
+## 4. References
 
 - https://www.runoob.com/w3cnote/ascii.html
   - 菜鸟教程 ASCII 表

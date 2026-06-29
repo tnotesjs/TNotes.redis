@@ -2,17 +2,17 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 目录](#2--目录)
-- [3. 🔗 References](#3--references)
+- [1. 概述](#1-概述)
+- [2. 目录](#2-目录)
+- [3. References](#3-references)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 记录了菜鸟教程上的 redis 教程链接，以及目录大纲。
 
-## 2. 📒 目录
+## 2. 目录
 
 - Redis 教程
   - Redis 简介
@@ -45,7 +45,7 @@
   - Java 使用 Redis
   - PHP 使用 Redis
 
-## 3. 🔗 References
+## 3. References
 
 - https://www.runoob.com/redis/redis-tutorial.html
   - 菜鸟教程 redis

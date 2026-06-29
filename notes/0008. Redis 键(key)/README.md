@@ -2,17 +2,17 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 常用的 redis 键命令](#2--常用的-redis-键命令)
-- [3. 💻 key](#3--key)
+- [1. 概述](#1-概述)
+- [2. 常用的 redis 键命令](#2-常用的-redis-键命令)
+- [3. key](#3-key)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - Redis 键命令用于管理 redis 的键。
 
-## 2. 📒 常用的 redis 键命令
+## 2. 常用的 redis 键命令
 
 - 【1】基础操作
 - 【2】过期时间管理
@@ -104,7 +104,7 @@ SCAN CURSOR [MATCH pattern] [COUNT count]
 
 :::
 
-## 3. 💻 key
+## 3. key
 
 ```bash
 SET a 1  # 设置键 a 为 1

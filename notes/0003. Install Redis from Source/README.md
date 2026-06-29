@@ -2,20 +2,20 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 从源码安装 Redis（以 macos 为例）](#2--从源码安装-redis以-macos-为例)
-- [3. 🔗 References](#3--references)
+- [1. 概述](#1-概述)
+- [2. 从源码安装 Redis（以 macos 为例）](#2-从源码安装-redis以-macos-为例)
+- [3. References](#3-references)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 记录从源代码安装 Redis 的步骤。
 - 本节记录的流程主要以 macOS 为例。
   - 这种安装方式也同时适用于 Windows 系统。
   - 注：需要启用 WSL（Windows Subsystem for Linux）
 
-## 2. 💻 从源码安装 Redis（以 macos 为例）
+## 2. 从源码安装 Redis（以 macos 为例）
 
 ::: code-group
 
@@ -63,7 +63,7 @@ sudo make install
 
 :::
 
-## 3. 🔗 References
+## 3. References
 
 - https://redis.io/docs/latest/operate/oss_and_stack/install/archive/install-redis/install-redis-from-source/
   - 官方文档 - Install Redis from Source
