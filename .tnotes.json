@@ -33,13 +33,12 @@
       "26.03": 24,
       "26.04": 24,
       "26.05": 24,
-      "26.06": 24
+      "26.06": 24,
+      "26.07": 24,
+      "26.08": 24
     },
     "details": "redis 笔记",
-    "link": "https://tnotesjs.github.io/TNotes.redis/",
-    "created_at": 1751462200000,
-    "updated_at": 1782717964000,
-    "days_since_birth": 9863
+    "link": "https://tnotesjs.github.io/TNotes.redis/"
   },
   "port": 9501,
   "menuItems": [
