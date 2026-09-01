@@ -13,7 +13,7 @@
 
 ## 2. redis 单词本
 
-<E
+<WordList
   needSort
   :words="[
     'delete',

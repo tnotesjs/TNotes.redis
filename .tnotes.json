@@ -35,7 +35,8 @@
       "26.05": 24,
       "26.06": 24,
       "26.07": 24,
-      "26.08": 24
+      "26.08": 24,
+      "26.09": 24
     },
     "details": "redis 笔记",
     "link": "https://tnotesjs.github.io/TNotes.redis/"
