@@ -1,7 +1,5 @@
-- redis 学习资源
-  - [x] 0001. 菜鸟教程 redis
-- 认识 redis
-  - [x] 0002. redis 简介
+- [x] 0002. redis 简介
+- [x] 0001. 菜鸟教程 redis
 - 安装 redis
   - [x] 0003. Install Redis from Source
   - [x] 0004. 通过 homebrew 在 macos 上安装 redis
