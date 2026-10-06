@@ -10,24 +10,7 @@
   "pageUrl": "https://tnotesjs.github.io/TNotes.redis/",
   "base": "/TNotes.redis/",
   "stats": {
-    "enabled": true,
-    "completedNotesCount": {
-      "25.07": 24,
-      "25.08": 24,
-      "25.09": 24,
-      "25.10": 24,
-      "25.11": 24,
-      "25.12": 24,
-      "26.01": 24,
-      "26.02": 24,
-      "26.03": 24,
-      "26.04": 24,
-      "26.05": 24,
-      "26.06": 24,
-      "26.07": 24,
-      "26.08": 24,
-      "26.09": 24
-    }
+    "enabled": true
   },
   "discussions": true
 }
