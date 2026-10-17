@@ -3,7 +3,7 @@
   "name": "TNotes.redis",
   "description": "redis 笔记",
   "icon": {
-    "src": "https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/assets/icon--redis.svg"
+    "src": "../assets/kb-icon.svg"
   },
   "repositoryUrl": "https://github.com/tnotesjs/TNotes.redis",
   "port": 9501,
